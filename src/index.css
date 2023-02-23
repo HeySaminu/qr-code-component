@@ -48,11 +48,21 @@ body {
   justify-content: space-evenly;
   align-items: center;
   gap: 16px;
+  overflow: hidden;
 }
 
 .QrContainer img{
   border-radius: 10px;
   margin-bottom: 8px;
+  width: 288px;
+  height: 288px;
+  scale: .9;
+  transition: all .5s ease;
+}
+
+.QrContainer img:hover{
+  scale: 1;
+  cursor: pointer;
 }
 
 h1,h2,h3{
@@ -67,5 +77,5 @@ h1,h2,h3{
 p{
   margin: 0;
   color: hsla(219, 15%, 55%, 1);
-  padding-inline: .5em;
+  padding-inline: 1em;
 }
