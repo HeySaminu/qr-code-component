@@ -56,13 +56,13 @@ body {
   margin-bottom: 8px;
   width: 288px;
   height: 288px;
-  scale: .9;
-  transition: all .5s ease;
+  filter: grayscale(100%);
+  transition: all 1s ease;
+  
 }
 
-.QrContainer img:hover{
-  scale: 1;
-  cursor: pointer;
+.QrContainer:hover img{
+  filter: grayscale(0);
 }
 
 h1,h2,h3{
